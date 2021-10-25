@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linierLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <!--    tools:context="">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBack"
+                app:cornerRadius="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:backgroundTint="@color/button"
+                android:drawableLeft="@drawable/ic_back"
+                android:text="back" />
+            <ImageView
+                android:layout_marginVertical="100dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/pic_transportasi3_foreground"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/button"
+                android:drawableTop="@drawable/ic_transportation"
+                android:text="FLIGHT" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTrain"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TRAIN"
+                android:backgroundTint="@color/button"
+                android:drawableTop="@drawable/ic_train"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
